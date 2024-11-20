@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album Foto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Album Foto</h1>
+    <p>O colecție de imagini frumoase.</p>
+  </header>
+
+  <main class="main-container">
+    <section class="album">
+      <h2>Imaginile mele preferate:</h2>
+      <div class="photo-gallery">
+        <!-- Imagine 1 -->
+        <div class="photo-card" onclick="showImage('img/img1.jpg')">
+          <img src="img/img1.jpg" alt="Imagine 1">
+        </div>
+        <!-- Imagine 2 -->
+        <div class="photo-card" onclick="showImage('img/img2.jpg')">
+          <img src="img/img2.jpg" alt="Imagine 2">
+        </div>
+        <!-- Imagine 3 -->
+        <div class="photo-card" onclick="showImage('img/img3.jpg')">
+          <img src="img/img3.jpg" alt="Imagine 3">
+        </div>
+        <!-- Imagine 4 -->
+        <div class="photo-card" onclick="showImage('img/img4.jpg')">
+          <img src="img/img4.jpg" alt="Imagine 4">
+        </div>
+        <!-- Imagine 5 -->
+        <div class="photo-card" onclick="showImage('img/img5.jpg')">
+          <img src="img/img5.jpg" alt="Imagine 5">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox (containerul pentru imaginea afișată full-screen) -->
+  <div id="lightbox" class="lightbox" onclick="closeImage()">
+    <img id="lightbox-img" src="" alt="Imagine Mare">
+  </div>
+
+  <footer class="footer">
+    <p>Creat cu ❤️ de tine</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
